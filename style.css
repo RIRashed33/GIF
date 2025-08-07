@@ -100,7 +100,7 @@ h5 {
     position: relative;
 }
 .condition::after {
-    content: '*Conditions apply';
+    content: 'Conditions apply';
     display: inline-block;
     font-size: 6px;
     font-family: sans-serif;
