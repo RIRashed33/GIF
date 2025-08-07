@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leaderboard {
+    width: 100%;
+    max-width: 728px;
+    display: flex;
+    align-items: center;
+    background: #2E323A;
+    color: #ffffff;
+    gap: 16px;
+	padding: 0 24px 0 16px;
+}
+.hero, .logo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+#changing_content {
+    flex: 1;
+}
+#changing_content .single-screen {
+    transition: opacity 0.5s ease-in-out;
+}
+#changing_content .single-screen:not(:first-child) {
+    display: none;
+}
+.row {
+    display: flex;
+    align-items: center;
+	gap: 16px;
+}
+h1 {
+    font-size: 27px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+h2 {
+    font-size: 19px;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 600;
+}
+h3 {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+h5 {
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.kamal-singh {
+	text-align: center;
+}
+.kamal-singh :is(h1, h5), h2 span {
+    color: #9B8A67;
+}
+.kamal-singh .left-column {
+    flex: 0 0 auto;
+}
+.kamal-singh .right-column {
+    flex: 1;
+}
+.get-in-touch {
+    display: inline-block;
+    font-size: 8px;
+    background: #9B8A67;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 8px 4px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.kamal-singh .get-in-touch {
+	margin-top: 5px;
+}
+.condition {
+    display: inline-block;
+    position: relative;
+}
+.condition::after {
+    content: '*Conditions apply';
+    display: inline-block;
+    font-size: 6px;
+    font-family: sans-serif;
+    font-weight: 400;
+    min-width: max-content;
+    position: absolute;
+    bottom: -2px;
+    left: 100%;
+}
+.contact-us .row {
+    padding: 14px 4px 14px 0;
+}
+.contact-us .right-column {
+    flex: 0 0 auto;
+}
+.contact-us .left-column {
+    flex: 1;
+}
+.contact-us .get-in-touch {
+    padding: 12px 10px 10px;
+}
+.services .left-column {
+    text-align: center;
+    flex: 0 0 auto;
+}
+.services .left-column .get-in-touch {
+    margin-top: 10px;
+}
+.services-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 14px;
+    row-gap: 4px;
+    font-size: 20px;
+    line-height: 1;
+    color: #9B8A67;
+    text-transform: uppercase;
+    padding: 14px 0;
+}
+.services-list li {
+    background: url(./img/checkmark.webp) no-repeat top left / 30px;
+    padding-left: 32px;
+    padding-top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .leaderboard {
+        flex-direction: column;
+        max-width: 300px;
+        min-height: 400px;
+        padding: 16px 16px 24px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .contact-us .row {
+        padding: 0;
+    }
+    .services-list {
+        padding: 0;
+    }
+    :is(h2, h5) br {
+        display: none !important;
+    }
+    .kamal-singh h1 {
+        margin-bottom: 12px;
+    }
+    .kamal-singh .get-in-touch {
+        margin-top: 10px;
+    }
+    #changing_content {
+        display: flex;
+        align-items: center;
+    }
+}
