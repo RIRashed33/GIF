@@ -26,6 +26,10 @@ body {
     display: flex;
     align-items: center;
 }
+.hero img {
+    max-height: 90px;
+    width: auto;
+}
 #changing_content {
     flex: 1;
 }
